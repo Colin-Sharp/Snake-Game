@@ -2,15 +2,36 @@
   <head>
     <title>Snake Game</title>
     <link rel="shortcut icon" href="./img/food.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
     <style>
+      body {
+        margin: 0;
+        background: linear-gradient(to bottom right, #f4f6f6, #b8e9c0);
+      }
       canvas {
         display: block;
         margin: 0 auto;
-        border: 5px solid red;
         border-radius: 10px;
+      }
+      header {
+        height: 100px;
+        background: #207561;
+        margin-bottom: 50px;
+        color: white;
+        text-align: center;
+      }
+      h1 {
+        font-size: 50px;
+        padding-top: 10px;
       }
     </style>
   </head>
-  <canvas id="snake" width="608" height="608"></canvas>
-  <script src="snake.js"></script>
+  <body>
+    <header><h1 class="animated rollIn">Snake Game</h1></header>
+    <canvas id="snake" width="608" height="608"></canvas>
+    <script src="snake.js"></script>
+  </body>
 </html>
